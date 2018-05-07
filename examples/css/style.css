@@ -1,0 +1,322 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+
+.noPadding{
+    padding: 0px;
+}
+.noMargin{
+    margin: 0px;
+}
+.centerText{
+    text-align: center;
+}
+.devBorder{
+    border: 1px solid #000;
+}
+.fullHeight{
+    height: 100%
+}
+.halfHeight{
+    height: 50%;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    height: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align:left;
+    width: 100%;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+    left: 50px;
+}
+.controlArrow.next{
+    right: 50px;
+}
+
+/* style for section 1 */
+
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
+/*
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+*/
+
+/* SECTION 1 STYLING */
+/* left text */
+.hpLeftText{
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: easeLeft;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    background-color: rgba(125, 122, 122, 0.3);
+    color: #fff;
+    font-size: 42px;
+    left: -5%;
+    position: absolute;
+    padding: 0px 10px 0px 0px;
+    text-align: right;
+    top: -20%;
+    width: 35%;
+    z-index: 999;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes easeLeft {
+    0%   {left:-5%; top: -20%;}
+    100% {left:0%; top: 20%;}
+}
+
+/* Standard syntax */
+@keyframes easeLeft {
+    0%   {left:-5%; top: -20%;}
+    100% {left:0%; top: 20%;}
+}
+
+/* right text */
+.hpRightText{
+    -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-name: easeRight;
+    background-color: rgba(125, 122, 122, 0.3);
+    bottom: 0%;
+    color: #fff;
+    font-size: 38px;
+    padding: 0px 0px 0px 10px;
+    position: absolute;
+    right: -50%;
+    text-align: left;
+    width: 35%;
+    z-index: 999;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes easeRight {
+    0%   {right:-5%; bottom: 0%;}
+    100% {right:0%; bottom: 20%;}
+}
+
+/* Standard syntax */
+@keyframes easeRight {
+    0%   {right:-5%; bottom: 0%;}
+    100% {right:0%; bottom: 20%;}
+}
+/* END SECTION 1 STYLING */
+
+
+/* SECTION 2 STYLING */
+.secondSection .howItWorksHeader{
+    height: 20%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    text-align: center;
+    top: -45px !important;
+    width: 100%;
+}
+.secondSection .howItWorksHeader p {
+    color: #2d98c4;
+    font-size: 34px;
+    margin-top: 5%;
+}
+.secondSection .howItWorksHeader hr {
+    border-style: solid; 
+    border-color: #2d98c4; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px;
+    height: 30px; 
+    width: 50%;
+}
+.secondSection .howItWorksHeader hr::before {
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #2d98c4; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px;
+}
+
+
+.secondSection .howItWorksContent{
+    height: 80%;
+    margin-top: 3%;
+    text-align: center;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+/* END SECTION 2 STYLING */
+
+
+/* SECTION 3 STYLING */
+p.rotatingText{
+    text-align: left;
+    font-size: 2.4em;
+    margin: 2% 0% 0% 2%;
+}
+
+/* WORDS SWAP */
+[data-words]{
+    vertical-align: top;
+    position: static;
+}
+[data-words] > span{
+    position: absolute;
+    color: #9F1C35;
+}
+/* END SECTION 3 STYLING */
+
+
+/* SECTION 4 STYLING */
+.fourthSection .tryHiveHeader{
+    height: 20%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    text-align: center;
+    top: -45px !important;
+    width: 100%;
+}
+.fourthSection .tryHiveHeader p {
+    color: #fff;
+    font-size: 34px;
+    margin-top: 5%;
+}
+.fourthSection .tryHiveHeader hr {
+    border-style: solid; 
+    border-color: #fff; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px;
+    height: 30px; 
+    width: 50%;
+}
+.fourthSection .tryHiveHeader hr::before {
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px;
+    border-style: solid; 
+    border-color: #fff; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px;
+}
+/* END OF SECTION 4 STYLING */

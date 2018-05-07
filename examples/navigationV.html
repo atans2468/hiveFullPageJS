@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HivePro</title>
+	<meta name="author" content="Austin Tans" />
+	<meta name="description" content="HivePro Homepage" />
+	<meta name="keywords"  content="hive,data,analytics,BI,business,intelligence,pro,empower,growth" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				//sectionsColor: ['#1BBC9B', '#1BBC9B', '#7E8F7C', '#C63D0F'],
+				sectionsColor: ['#fff', '#fff', '#2d98c4', '#1d262d'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth and last page']
+			});
+
+			//Build array of IDs of videos used in carousels as default behaviour when loading fails
+			var homePageVids = ['video1'];
+			
+			setTimeout(function() {
+				for (i = 0; i < homePageVids.length; i++) {
+					var vidId = '#' + homePageVids[i];
+					
+					$(vidId).load();
+				}
+			})
+		});
+	</script>
+
+</head>
+<body>
+
+<!--<ul id="menu" class="header">
+	<li class="active"><a href="#">Home</a></li>
+	<li><a href="#"></a></li>
+	<li><a href="#"></a></li>
+</ul>-->
+
+<div id="fullpage">
+	
+	<!-- SECTION 1 -->
+	<div class="section " id="section0" style="height: 100vh;">
+		
+		<div class="intro" style="height: 100%;">
+			<img src="imgs/test.jpg" style="width: 100%; max-height: 108%;" />
+			
+			<p class="hpLeftText"><b>MORE THAN DATA</b></p>
+			
+			<br>
+			
+			<p class="hpRightText"><b>...we empower growth</b></p>
+		</div>
+
+	</div>
+	<!-- end of section 1 -->
+
+
+	<!-- SECTION 2 -->
+	<div class="section secondSection" id="section1">
+		
+		<!-- header -->
+		<div class="howItWorksHeader">
+			<p><b>By Integrating Your Tools</b></p>
+			<hr>
+		</div>
+		<!-- end of header -->
+
+		<!-- logos row -->
+		<div class="row howItWorksContent">
+			
+			<!-- Slack -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/slack_hp_logo.png" style="width: 90%; height: 35%;" />
+			</div>
+			
+			<!-- Jenkins -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/jenkins_logo.png" style="width: 90%; height: 35%;" />
+			</div>
+
+			<!-- PhoneGap Build -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/phonegap_hp_logo.png" style="width: 85%; height: 30%;" />
+			</div>
+
+			<!-- TeamCity -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/teamcity_logo.png" style="width: 50%; height: 35%;" />
+			</div>
+			
+
+			<!-- GoogleDrive -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/drive_hp_logo.png" style="width: 90%; height: 35%;" />
+			</div>
+			
+			<!-- JIRA -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/Jira_Logo.png" style="width: 90%; height: 35%;" />
+			</div>
+			
+			<!-- PivotalTracker -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/Tracker_Full_Logo.png" style="width: 90%; height: 35%;" />
+			</div>
+			
+			<!-- GitHub -->
+			<div class="col-xs-12 col-md-3 halfHeight">
+				<span class="helper"></span>
+				<img src="imgs/GitHub_Logo.png" style="width: 90%; height: 35%;" />
+			</div>
+
+		</div>
+		<!-- end of logos row -->
+
+	</div>
+	<!-- end of section 2 -->
+
+
+	<!-- SECTION 3 -->
+	<div class="section thirdSection" id="section2" style="color: #fff;">
+		
+		<div class="row" style="height: 20%">
+		
+			<div class="col-xs-12 fullHeight">
+				<p class="rotatingText" style="width: 100%;">
+				We provide analytics that change the way you 
+				<span data-words="build software|manage teams|deploy projects|support clients"></span>
+				</p>
+			</div>
+
+		</div>
+
+		<div class="row" style="height: 80%">
+			<div class="col-xs-12 col-md-4 fullHeight centerText">
+				<p style="width: 100%; margin-top: 20%; margin-left: 5%; font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec sapien sit amet nunc bibendum ullamcorper vel ut nisi. Cras eu sapien rhoncus, rutrum risus viverra, varius nisl. Etiam nibh quam, rutrum sed urna a, laoreet venenatis ipsum. Cras vel pellentesque risus, non maximus ante. Aliquam non tincidunt mauris. Nunc porta consequat venenatis. Nulla facilisi. Sed mattis sapien at faucibus gravida. Duis congue ligula at laoreet blandit. Morbi luctus molestie eleifend. Curabitur nulla augue, rhoncus eu diam quis, lacinia feugiat urna. Pellentesque nulla velit, imperdiet at leo eu, venenatis ornare massa. Donec gravida ac diam vitae elementum. Ut eu ullamcorper elit. Maecenas imperdiet egestas tortor sit amet tempus. Aliquam in sodales tellus.</p>
+			</div>
+
+			<div class="col-xs-12 col-md-8 fullHeight">
+				<img src="imgs/powerBILaptop.png" style="position: absolute; right: -15%; width: 100%; height: 100%;" />
+			</div>
+		</div>
+
+	</div>
+	<!-- end of section 3 -->
+
+
+	<!-- SECTION 4 -->
+	<div class="section fourthSection" id="section3" style="color: #fff;">
+		<div class="tryHiveHeader">
+			<p><b>Try Hive FREE Today</b></p>
+			<hr>
+		</div>
+	</div>
+	<!-- end of section 4 -->
+
+</div>
+
+
+</body>
+</html>
